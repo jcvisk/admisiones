@@ -63,6 +63,7 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
       <th>Dirección Permanente</th>
       <th>Celular</th>
       <th>Ocupacion</th>
+      <th>Estado civil</th>
       <th>Nombre de patrocinador</th>
       <th>Apellido Paterno</th>
       <th>Apellido Materno</th>
@@ -122,6 +123,7 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
       <td><?= $detalleProspecto['direccionmadre']?></td>
       <td><?= $detalleProspecto['celularmadre']?></td>
       <td><?= $detalleProspecto['ocupacionmadre']?></td>
+      <td><?= $detalleProspecto['edocivilpadres']?></td>
       <td><?= $detalleProspecto['nombrepatrocinador']?></td>
       <td><?= $detalleProspecto['apellidoppatrocinador']?></td>
       <td><?= $detalleProspecto['apellidompatrocinador']?></td>
