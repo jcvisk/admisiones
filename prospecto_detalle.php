@@ -357,19 +357,19 @@ if (!isset($_SESSION['usuario_admin'])) {
                 <label for="inputTrabajo">Colonia</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['coloniapatrocinador']?>" disabled>
               </div>
-              <div class="form-group input-group-sm col-md-3">
+              <div class="form-group input-group-sm col-md-4">
                 <label for="inputTrabajo">Ciudad</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['ciudadpatrocinador']?>" disabled>
               </div>
-              <div class="form-group input-group-sm col-md-3">
+              <div class="form-group input-group-sm col-md-4">
                 <label for="inputTrabajo">Estado</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['estadopatrocinador']?>" disabled>
               </div>
-              <div class="form-group input-group-sm col-md-3">
+              <div class="form-group input-group-sm col-md-4">
                 <label for="inputTrabajo">C.P</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['codigopostalpatrocinador']?>" disabled>
               </div>
-              <div class="form-group input-group-sm col-md-3">
+              <div class="form-group input-group-sm col-md-4">
                 <label for="inputTrabajo">País</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['paispatrocinador']?>" disabled>
               </div>
