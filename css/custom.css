@@ -1,0 +1,28 @@
+:root{
+    --green: #28a745;
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+*{
+    font-family: "Lato";
+}
+/*BOOTSTRAP*/
+.input-green:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--green);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+/*LOGIN ADMIN*/
+.text-admin h3{
+    background-color: var(--green) !important;
+    color: white;
+}
+.bg-dividier{
+    background-color: var(--green);
+    color: white;
+}
