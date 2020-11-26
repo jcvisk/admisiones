@@ -330,6 +330,10 @@ if (!isset($_SESSION['usuario_admin'])) {
                 <label for="inputTrabajo">Ocupacion</label>
                 <input type="text" class="form-control" placeholder="<?= $detalleProspecto['ocupacionmadre']?>" disabled>
               </div>
+              <div class="form-group input-group-sm col-md-12">
+                <label for="inputTrabajo">Estado civil</label>
+                <input type="text" class="form-control" placeholder="<?= $detalleProspecto['edocivilpadres']?>" disabled>
+              </div>
             </div>
 
             <div class="form-row  align-items-center">
