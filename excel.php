@@ -45,7 +45,36 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
       <th>¿Cómo te enteraste del Instituto Universitario del Sureste?</th>
       <th>Trabajo</th>
       <th>Beca</th>
-
+      <th>Tipo de sangre</th>
+      <th>Impedimento físico</th>
+      <th>Enfermedad o alergia</th>
+      <th>Alergia a mediacmento</th>
+      <th>Seguro</th>
+      <th>Carrera</th>
+      <th>Nombre del padre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Dirección Permanente</th>
+      <th>Celular</th>
+      <th>Ocupacion</th>
+      <th>Nombre de la madre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Dirección Permanente</th>
+      <th>Celular</th>
+      <th>Ocupacion</th>
+      <th>Nombre de patrocinador</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Calle y Numero</th>
+      <th>Colonia</th>
+      <th>Ciudad</th>
+      <th>Estado</th>
+      <th>C.P</th>
+      <th>País</th>
+      <th>Email</th>
+      <th>Telefono</th>
+      <th>Ocupación</th>
     </tr>
   </thead>
   <tbody>
@@ -75,6 +104,36 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
       <td><?= $detalleProspecto['enterado']?></td>
       <td><?= $detalleProspecto['trabajo']?></td>
       <td><?= $detalleProspecto['beca']?></td>
+      <td><?= $detalleProspecto['tiposangre']?></td>
+      <td><?= $detalleProspecto['impedimendofisico']?></td>
+      <td><?= $detalleProspecto['enfermedadalergia']?></td>
+      <td><?= $detalleProspecto['alergiamedicamento']?></td>
+      <td><?= $detalleProspecto['seguro']?></td>
+      <td><?= $detalleProspecto['carrera']?></td>
+      <td><?= $detalleProspecto['nombrepadre']?></td>
+      <td><?= $detalleProspecto['apellidopaternopadre']?></td>
+      <td><?= $detalleProspecto['apellidomaternopadre']?></td>
+      <td><?= $detalleProspecto['direccionpadre']?></td>
+      <td><?= $detalleProspecto['celularpadre']?></td>
+      <td><?= $detalleProspecto['ocupacionpadre']?></td>
+      <td><?= $detalleProspecto['nombremadre']?></td>
+      <td><?= $detalleProspecto['apellidopaternomadre']?></td>
+      <td><?= $detalleProspecto['apellidomaternomadre']?></td>
+      <td><?= $detalleProspecto['direccionmadre']?></td>
+      <td><?= $detalleProspecto['celularmadre']?></td>
+      <td><?= $detalleProspecto['ocupacionmadre']?></td>
+      <td><?= $detalleProspecto['nombrepatrocinador']?></td>
+      <td><?= $detalleProspecto['apellidoppatrocinador']?></td>
+      <td><?= $detalleProspecto['apellidompatrocinador']?></td>
+      <td><?= $detalleProspecto['callepatrocinador']?></td>
+      <td><?= $detalleProspecto['coloniapatrocinador']?></td>
+      <td><?= $detalleProspecto['ciudadpatrocinador']?></td>
+      <td><?= $detalleProspecto['estadopatrocinador']?></td>
+      <td><?= $detalleProspecto['codigopostalpatrocinador']?></td>
+      <td><?= $detalleProspecto['paispatrocinador']?></td>
+      <td><?= $detalleProspecto['correopatrocinador']?></td>
+      <td><?= $detalleProspecto['telefonopatrocinador']?></td>
+      <td><?= $detalleProspecto['ocupacion']?></td>
     </tr>
   </tbody>
 </table>
