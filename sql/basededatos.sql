@@ -39,7 +39,7 @@ CREATE TABLE datosfinancieros (
   `iddatosubicacion` INT NOT NULL,
   CONSTRAINT `pk_datosfinancieros` PRIMARY KEY (`id`),
   CONSTRAINT `fk_datosfinancieros_datosubicacion` FOREIGN KEY(`iddatosubicacion`) REFERENCES `datosubicacion` (`id`)
-)ENGINE = InnoDB;
+)ENGINE = InnoDB;  
 
 CREATE TABLE datosreligion (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -136,11 +136,11 @@ CREATE TABLE usuarios (
   CONSTRAINT `fk_usuarios_datosfamiliares` FOREIGN KEY(`iddatosfamiliares`) REFERENCES `datosfamiliares` (`id`),
   CONSTRAINT `fk_usuarios_datosfinancieros` FOREIGN KEY(`iddatosfinancieros`) REFERENCES `datosfinancieros` (`id`),
   CONSTRAINT `fk_usuarios_datosreligion` FOREIGN KEY(`iddatosreligion`) REFERENCES `datosreligion` (`id`),
-  CONSTRAINT `fk_usuarios_tipousuario` FOREIGN KEY(`idtipousuario`) REFERENCES `tipousuario` (`id`),
   CONSTRAINT `fk_usuarios_enterado` FOREIGN KEY(`identerado`) REFERENCES `enterado` (`id`),
   CONSTRAINT `fk_usuarios_datosacademicos` FOREIGN KEY(`iddatosacademicos`) REFERENCES `datosacademicos` (`id`),
   CONSTRAINT `fk_usuarios_datossalud` FOREIGN KEY(`iddatossalud`) REFERENCES `datossalud` (`id`),
-  CONSTRAINT `fk_usuarios_datospersonales` FOREIGN KEY(`iddatospersonales`) REFERENCES `datospersonales` (`id`)
+  CONSTRAINT `fk_usuarios_datospersonales` FOREIGN KEY(`iddatospersonales`) REFERENCES `datospersonales` (`id`),
+  CONSTRAINT `fk_usuarios_tipousuario` FOREIGN KEY(`idtipousuario`) REFERENCES `tipousuario` (`id`)
 )ENGINE = InnoDB;
 
 INSERT INTO enterado VALUES
@@ -172,5 +172,4 @@ INSERT INTO datosacademicos VALUES
 INSERT INTO tipousuario VALUES
     (NULL, 'prospecto'),
     (NULL, 'alumno'),
-    (NULL, 'admin'),
-    (NULL, 'master');
+    (NULL, 'admin');
