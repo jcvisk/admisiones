@@ -12,13 +12,13 @@ function mostrarErrores ( $errores, $campo ) {
 //Borrar errores mostrados
 
 function borrarErrores() {
-    if($_SESSION['errores']){
+    if(isset($_SESSION['errores'])){
         $_SESSION['errores'] = null;
     }
-    if($_SESSION['error_login']){
+    if(isset($_SESSION['error_login'])){
         $_SESSION['error_login'] = null;
     }
-    if($_SESSION['change_status_successful']){
+    if(isset($_SESSION['change_status_successful'])){
         $_SESSION['change_status_successful'] = null;
     }
 }
