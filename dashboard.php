@@ -48,36 +48,6 @@ if (!isset($_SESSION['usuario_admin'])) {
                                 Dashboard <span class='sr-only'>( current )</span>
                             </a>
                         </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='file'></span>
-                                Orders
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='shopping-cart'></span>
-                                Products
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='users'></span>
-                                Customers
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='bar-chart-2'></span>
-                                Reports
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='layers'></span>
-                                Integrations
-                            </a>
-                        </li>
                     </ul>
 
                     <h6
@@ -89,27 +59,9 @@ if (!isset($_SESSION['usuario_admin'])) {
                     </h6>
                     <ul class='nav flex-column mb-2'>
                         <li class='nav-item'>
-                            <a class='nav-link' href='#'>
+                            <a class='nav-link' href='student_List.php'>
                                 <span data-feather='file-text'></span>
-                                Current month
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='file-text'></span>
-                                Last quarter
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='file-text'></span>
-                                Social engagement
-                            </a>
-                        </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href='#'>
-                                <span data-feather='file-text'></span>
-                                Year-end sale
+                                Lista de Alumnos
                             </a>
                         </li>
                     </ul>
@@ -127,7 +79,7 @@ if (!isset($_SESSION['usuario_admin'])) {
                         </button>
                     </div>
                 </div>
-                <h2>Section title</h2>
+                <h2>Lista de Prospectos</h2>
                 <div class='table-responsive'>
                     <table class='table table-striped table-sm'>
                         <thead>
