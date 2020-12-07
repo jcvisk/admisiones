@@ -12,8 +12,15 @@ function mostrarErrores ( $errores, $campo ) {
 //Borrar errores mostrados
 
 function borrarErrores() {
-    $_SESSION['errores'] = null;
-    $_SESSION['error_login'] = null;
+    if($_SESSION['errores']){
+        $_SESSION['errores'] = null;
+    }
+    if($_SESSION['error_login']){
+        $_SESSION['error_login'] = null;
+    }
+    if($_SESSION['change_status_successful']){
+        $_SESSION['change_status_successful'] = null;
+    }
 }
 
 //Obtener el ID del ultimo registro de la tabla ( solo se utiliza para registrar los datos )
@@ -35,7 +42,20 @@ function getid( $conexion, $nameTable ) {
 //mostrar la lista de los prospectos
 
 function listarProstectos( $conexion ) {
-    $sql = 'SELECT * FROM datosacademicos a INNER JOIN usuarios b ON a.id = b.iddatosacademicos;';
+    $sql = 'SELECT * FROM datosacademicos a INNER JOIN usuarios b ON a.id = b.iddatosacademicos WHERE b.idtipousuario = 1;';
+    $prospectos = mysqli_query( $conexion, $sql );
+
+    $resultado = array();
+    if ( $prospectos && mysqli_num_rows( $prospectos ) >= 1 ) {
+        $resultado = $prospectos;
+    }
+
+    return $resultado;
+}
+
+//mostrar la lista de los alumnos
+function listarAlumnos( $conexion ) {
+    $sql = 'SELECT * FROM datosacademicos a INNER JOIN usuarios b ON a.id = b.iddatosacademicos WHERE b.idtipousuario = 2;';
     $prospectos = mysqli_query( $conexion, $sql );
 
     $resultado = array();
