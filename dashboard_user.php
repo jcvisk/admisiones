@@ -5,10 +5,9 @@ require_once 'includes/helpers.php';
 
 if (!isset($_SESSION['usuario'])) {
     header('Location: index.php');
-
 }
 
-$detalleProspecto =  getProspecto($conexion, $_GET['id']);
+$detalleProspecto =  getProspecto($conexion, $_SESSION['usuario']['id']);
 
 ?>
 <!doctype html>
@@ -137,7 +136,6 @@ $detalleProspecto =  getProspecto($conexion, $_GET['id']);
           </div>
         </div>
         <h2><?= $detalleProspecto['nombre'].' '.$detalleProspecto['apellidopaterno'] ?></h2>
-        <div class='table-responsive'>
           <form>
             <div class="form-row">
               <div class="form-group input-group-sm col-md-4">
@@ -392,7 +390,6 @@ $detalleProspecto =  getProspecto($conexion, $_GET['id']);
             </div>
             
           </form>
-        </div>
       </main>
         </div>
     </div>
