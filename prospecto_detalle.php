@@ -45,7 +45,7 @@ if (!isset($_SESSION['usuario_admin'])) {
         <div class='sidebar-sticky pt-3'>
           <ul class='nav flex-column'>
                         <li class='nav-item'>
-                            <a class='nav-link' href='#'>
+                            <a class='nav-link' href='dashboard.php'>
                                 <span data-feather='home'></span>
                                 Dashboard <span class='sr-only'>( current )</span>
                             </a>
